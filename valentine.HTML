@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart for my heart</title>
+    </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/flower.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+    *{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:lightgray;  
+    text-shadow: 5px 5px 10px 5px  rgb(63, 63, 63);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 98.2vh;
+    margin: 0;
+    background-color:rgb(37, 37, 37);
+   
+} 
+
+.fa-heart{
+    color: rgba(255, 0, 0, 0.829);
+    font-size: 35vh;
+    animation: pulse 1.7s infinite;
+    text-shadow: 10px 10px 10px 10px whitesmoke;
+   
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+        
+      }
+    50%{
+        transform: scale(1.3);
+        
+      }
+      100%{
+        transform: scale(1);
+        
+      }
+}
+</style>
+</head>
+<body>
+    
+<div class="container">
+    <div id="h1">
+        <i id="hover" class="fa fa-heart" aria-hidden="true" onmouseover="message()"></i>
+
+    </div>
+</div> 
+  <script>
+    
+document.getElementById("hover").addEventListener("mouseover", function() {
+   alert("! I LOVE YOU ! ");
+   
+   var a= prompt( "What about you?");
+   if(a=="me too"){
+    alert("Correct Answer!!");
+   }
+   else if(a== "i love you too"){
+    alert("Correct Answer!!");
+   }
+   else{
+    alert("Wrong Answer!!:( ");
+    alert('try agian ._. !!');
+   let b= prompt("Do you love me?");
+      if (b=="i love you too"){
+        alert("sameeee");
+      }
+  
+   }
+   var c=prompt("Do you wanna know something?");
+   if(c=="yes")
+   {
+    alert("I love you with my whole heart. By this I hope you know how much I love and adore you and your presence. Happy boyfriend's day baby, Mwah :3")
+   }
+   else if(c=="okay")
+    {
+     alert("I love you with my whole heart. By this I hope you know how much I love and adore you and your presence. Happy boyfriend's day baby, Mwah :3")
+    }
+    else{
+      alert('!Wrong keyword! try again. Use either "yes" or "okay"');
+    }
+    alert('anddddddd');
+    alert("you're such a cutie patootie ");
+    prompt('okay bye!<3');
+ });
+  </script>
+</body>
+</html>
